@@ -5,10 +5,10 @@ from voice import voice_handler
 from voice import text_to_file
 
 async def start(update, context):
-    await update.message.reply_text(f'Please, to start using this bot 👉 /hello')
+    await update.message.reply_text(f'Dear user, to start using this bot 👉 /hello')
 
 async def hello(update, context):
-    await update.message.reply_text(f'Hello {update.effective_user.first_name}, I am a text_to_speech and speech_to_text bot. So talk to me or write. Whatever... ')
+    await update.message.reply_text(f'Hello {update.effective_user.first_name}, I am a text_to_speech and speech_to_text bot. So talk to me or write ')
 
 async def reply(update, context):
     file_name = text_to_file(update.message.text)
