@@ -27,7 +27,7 @@ async def voice_handler(update, context):
     subprocess.call(['ffmpeg', '-i', 'voice.ogg',
                          'voice.wav', '-y'])
     text = audio_to_text(filename)
-    await update.message.reply_text(text)
+    await update.message.reply_text("You said 🧐:" + text)
 
 def audio_to_text(name):
    

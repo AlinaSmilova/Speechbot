@@ -134,3 +134,5 @@ dmypy.json
 data/
 *.mp3
 *.ogg
+
+config/

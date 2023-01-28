@@ -4,6 +4,10 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, fil
 from voice import voice_handler
 from voice import text_to_file
 
+import config 
+
+
+
 async def start(update, context):
     await update.message.reply_text(f'Dear user, to start using this bot 👉 /hello')
 
@@ -16,7 +20,7 @@ async def reply(update, context):
     await update.message.reply_text("Ta-dam")
     await update.message.reply_text("You typed 🧐:" + (update.message.text))   
     
-app = ApplicationBuilder().token("5950882810:AAHVuW9ZlUrQ63cFfvapHK_iV63QXLm3ksY").build()
+app = ApplicationBuilder().token(config.TOKEN).build()
 app.add_handler(MessageHandler(filters.VOICE & ~filters.COMMAND, voice_handler))
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, reply))
 app.add_handler(CommandHandler("hello", hello))
