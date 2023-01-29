@@ -129,6 +129,7 @@ dmypy.json
 .pyre/
 # Local files
 *.wav
+*.ogg
 
 data/
 *.mp3
