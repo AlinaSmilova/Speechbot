@@ -135,5 +135,5 @@ data/
 *.mp3
 *.ogg
 # tokens
-config.py
+*config.py
 
