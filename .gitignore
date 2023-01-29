@@ -129,11 +129,10 @@ dmypy.json
 .pyre/
 # Local files
 *.wav
-*.ogg
 
 data/
 *.mp3
 *.ogg
-# tokens
+# token
 config.py
 
