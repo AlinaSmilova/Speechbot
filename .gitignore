@@ -135,4 +135,4 @@ data/
 *.mp3
 *.ogg
 
-config/
+config.py
